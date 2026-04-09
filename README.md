@@ -34,15 +34,7 @@ To make things easier, I had to assume a few things based on the real world:
 
 ## Issues With the Images
 
-I found a few problems with the dataset that hurt the model's accuracy.
-
-1. **Wrong Labels**: Some images simply had the wrong labels given by the people who made the dataset.
-   
-   ![Wrong Label Example 1](images/wrong_label.png)
-   
-   ![Wrong Label Example 2](images/wrong_label_2.png)
-
-2. **Confusing Parts**: 
+1. **Confusing Parts**: 
    - `rightbpillar`: The B-pillar is right in the middle of the car doors, so it's hard to say if it means the picture is of the front or the back.
      
      ![Right B-Pillar Ambiguity](images/rightbpillar.png)
@@ -55,7 +47,7 @@ I found a few problems with the dataset that hurt the model's accuracy.
      
      ![Sunroof Ambiguity](images/sunroof.png)
 
-3. **Skipped Parts (`AMBIGUOUS_PARTS`)**:
+2. **Skipped Parts (`AMBIGUOUS_PARTS`)**:
    I had to ignore many parts completely because they don't help tell you what side you're looking at. These were:
    - **Top of car**: `roof`, `sunroof`, `roofrail`
    - **Wheels & Tyres**: things like `alloywheel`, `wheelcap`, or `tyre` (wheels look the same from the front-side or rear-side).
