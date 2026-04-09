@@ -69,14 +69,24 @@ I tried using a popular tool called **YOLO** to find and classify the cars, but 
 
 ## How to Test It Yourself
 
-### 1. Requirements
+### 1. Clone the Repository
+
+> [!IMPORTANT]
+> You must first clone the project to your computer and navigate into its folder before running any tests!
+
+```bash
+git clone https://github.com/ShubhamPrakash108/car-view-classifier.git
+cd car-view-classifier
+```
+
+### 2. Requirements
 Make sure you have Python installed, then install all the necessary packages I used for my code and notebooks:
 ```bash
 pip install tensorflow numpy pandas opencv-python matplotlib ipython
 ```
 
-### 2. Folder Setup
-Create a folder named `test` in the same folder as `test_run.py`. Put the car pictures you want to test inside it (`.jpg`, `.jpeg`, or `.png`).
+### 3. Folder Setup
+Create a folder named `test` right inside the newly cloned `car-view-classifier` folder. Put the car pictures you want to test inside it (`.jpg`, `.jpeg`, or `.png`).
 
 ```text
 car-view-classifier/
@@ -89,7 +99,7 @@ car-view-classifier/
 └── test_run.py 
 ```
 
-### 3. Run the Code
+### 4. Run the Code
 
 > [!IMPORTANT]
 > - Make sure your python code uses exactly these classes:
@@ -101,7 +111,7 @@ Open your terminal and run:
 python test_run.py
 ```
 
-### 4. Results
+### 5. Results
 The script will check every image in your `test` folder. 
 - It will print the guess on your screen.
 - At the end, it will create a `predictions.csv` file with all the results saved for you.
